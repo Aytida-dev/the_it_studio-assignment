@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const FROM = 'cicada.raj@gmail.com'
-const TO = 'aytida.dev@gmai.com'
+const TO = 'info@redpositive.in'
 const SUBJECT = "User data"
 
 
