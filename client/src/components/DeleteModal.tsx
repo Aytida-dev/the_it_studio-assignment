@@ -20,7 +20,7 @@ export default function DeleteModal({ openDelete, closeDeleteModel, setUsers }: 
         setDeleting(true)
 
         try {
-            await fetch(`http://localhost:8080/user/${openDelete?._id}`, {
+            await fetch(`https://the-it-studio-assignment.onrender.com/user/${openDelete?._id}`, {
                 method: "DELETE"
             })
 

@@ -40,7 +40,7 @@ export default function UserForm({ data, closeModel, action, setUsers }: props) 
         const id = (data && data !== "create") ? data._id : ""
 
         try {
-            const res = await fetch(`http://localhost:8080/user/${id}`, {
+            const res = await fetch(`https://the-it-studio-assignment.onrender.com/user/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
@@ -75,7 +75,7 @@ export default function UserForm({ data, closeModel, action, setUsers }: props) 
 
     async function handleCreate(user: User) {
         try {
-            const res = await fetch(`http://localhost:8080/user`, {
+            const res = await fetch(`https://the-it-studio-assignment.onrender.com/user`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

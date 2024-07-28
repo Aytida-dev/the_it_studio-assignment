@@ -23,7 +23,7 @@ export default function UserTable() {
     useEffect(() => {
         async function fetchUsers() {
             try {
-                const res = await fetch(`http://localhost:8080/user`)
+                const res = await fetch(`https://the-it-studio-assignment.onrender.com/user`)
                 const data = await res.json()
                 setUsers(data)
                 toast.success("Users fetched successfully")
@@ -72,7 +72,7 @@ export default function UserTable() {
 
         setLoading(true)
         try {
-            const res = await fetch("http://localhost:8080/user/sendMail", {
+            const res = await fetch("https://the-it-studio-assignment.onrender.com/user/sendMail", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
